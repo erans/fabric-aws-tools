@@ -3,6 +3,8 @@
 Tools to better integrate Fabric with Amazon Web Services (AWS)
 
 - Automagically assign Fabric roles based on tags set on EC2 instances. For example, deploy code only to web servers (see example below)
+- Feel free to send pull request with your own helpers that you use with Fabric and AWS
+
 
 ## Installation
 * `pip install fabric-aws-tools`
@@ -16,7 +18,7 @@ from fabric_aws_tools import *
 def deploy_webserver():
     run("do something")
 
-    
+
 # Runs every time you run "fab something".
 # Add it at the end of the file to make sure it runs each time.
 #
